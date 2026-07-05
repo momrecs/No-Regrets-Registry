@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The No-Regrets Registry</title>
+<meta name="description" content="Baby gear recs from an extremely picky mom of 2. The stuff that survived two kids, and the registry classics to skip."/>
+<meta property="og:title" content="The No-Regrets Registry"/>
+<meta property="og:description" content="Baby gear recs from an extremely picky mom of 2. The stuff that survived two kids, and the registry classics to skip."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍼</text></svg>"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --cream: #f4f1e9;
+    --warm-white: #fbf9f3;
+    --ink: #3a3630;
+    --ink-light: #6e675c;
+    --ink-muted: #a29a8b;
+    --sage: #c9d178;
+    --sage-light: #eff2d3;
+    --sage-dark: #5f6b24;
+    --blush: #e5a9ae;
+    --blush-light: #f5d2d2;
+    --blush-dark: #a64e58;
+    --butter: #f1c673;
+    --butter-light: #f9eacc;
+    --butter-dark: #8a5f10;
+    --sky: #a9d8dc;
+    --sky-light: #e3f1f3;
+    --sky-dark: #2a6875;
+    --lilac: #c79aad;
+    --lilac-light: #f0dfe7;
+    --lilac-dark: #8a4e6e;
+    --rose: #d98f96;
+    --rose-light: #f7e0e0;
+    --rose-dark: #9c4850;
+    --mint: #9ad4c6;
+    --mint-light: #e2f4ef;
+    --mint-dark: #29796a;
+    --peach: #edbe62;
+    --peach-light: #faedd0;
+    --peach-dark: #96660d;
+    --border: #e6dfcf;
+    --border-strong: #cbc1a9;
+    --radius: 14px;
+    --radius-sm: 9px;
+  }
+  body { font-family: 'Karla', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; font-size: 15px; }
+  a { color: var(--sky-dark); text-decoration: underline; text-decoration-color: var(--sky); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--sky-dark); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #f5d2d2 0%, #f6e2b4 32%, #eaefc5 66%, #dbf0ec 100%);
+    padding: 4rem 2rem 3rem; text-align: center; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 12% 65%, rgba(169,216,220,0.4) 0%, transparent 55%),
+                      radial-gradient(circle at 88% 12%, rgba(241,198,115,0.28) 0%, transparent 50%),
+                      radial-gradient(circle at 55% 95%, rgba(222,228,157,0.35) 0%, transparent 45%);
+  }
+  .hero-emoji { font-size: 52px; margin-bottom: 1rem; display: block; position: relative; }
+  .hero h1 { font-family: 'Lora', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; line-height: 1.15; margin-bottom: 1rem; position: relative; }
+  .hero h1 em { font-style: italic; color: var(--rose-dark); }
+  .hero-sub { font-size: 16px; color: var(--ink-light); max-width: 560px; margin: 0 auto 1.5rem; position: relative; font-style: italic; }
+  .hero-badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; position: relative; }
+  .badge { background: rgba(255,255,255,0.65); border: 1px solid rgba(255,255,255,0.85); border-radius: 999px; padding: 6px 16px; font-size: 13px; color: var(--ink); }
+  .badge.tldr-link { background: var(--rose-light); border-color: var(--rose); color: var(--rose-dark); font-weight: 600; text-decoration: none; }
+
+  /* LAYOUT */
+  .page { max-width: 820px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: var(--butter-light); border: 1.5px solid var(--butter); border-radius: var(--radius); padding: 1.1rem 1.3rem; margin-top: 2rem; font-size: 13.5px; line-height: 1.7; }
+
+  /* NAV */
+  .toc { margin-top: 1.5rem; background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; }
+  .toc-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.6rem; }
+  .toc-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .toc-links a { font-size: 12.5px; background: var(--cream); border: 1px solid var(--border); border-radius: 999px; padding: 5px 13px; text-decoration: none; color: var(--ink-light); font-weight: 500; }
+  .toc-links a:hover { border-color: var(--border-strong); color: var(--ink); }
+
+  /* SECTIONS */
+  .section { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+  .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.4rem; }
+  .section h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.4rem; scroll-margin-top: 1rem; }
+  .section-desc { color: var(--ink-light); font-size: 14.5px; margin-bottom: 1.5rem; max-width: 620px; line-height: 1.6; }
+
+  /* QUIP */
+  .quip { font-size: 15px; font-style: italic; font-weight: 600; color: var(--rose-dark); background: var(--rose-light); border: 2px solid var(--rose); border-radius: var(--radius); margin: 0.75rem 0 1.5rem; padding: 1rem 1.2rem; line-height: 1.7; }
+  .quip::before { content: '💅 '; }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .card { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; }
+  .card h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .card p { font-size: 13px; color: var(--ink-light); line-height: 1.55; }
+  .card .pick { font-size: 13.5px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .card-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-radius: 999px; padding: 3px 10px; margin-bottom: 8px; }
+  .tag-mint { background: var(--mint-light); color: var(--mint-dark); }
+  .tag-sky { background: var(--sky-light); color: var(--sky-dark); }
+  .tag-lilac { background: var(--lilac-light); color: var(--lilac-dark); }
+  .tag-peach { background: var(--peach-light); color: var(--peach-dark); }
+  .tag-rose { background: var(--rose-light); color: var(--rose-dark); }
+  .tag-butter { background: var(--butter-light); color: var(--butter-dark); }
+
+  /* INFO / WARNING BOXES */
+  .info-box { background: var(--sky-light); border: 1.5px solid var(--sky); border-radius: var(--radius); padding: 1rem 1.2rem; font-size: 13.5px; line-height: 1.65; margin: 1.25rem 0; }
+  .warn-box { background: var(--blush-light); border: 1.5px solid var(--blush); border-radius: var(--radius); padding: 1rem 1.2rem; font-size: 13.5px; line-height: 1.65; margin: 1.25rem 0; }
+  .hot-take { background: var(--peach-light); border: 2px dashed var(--peach); border-radius: var(--radius); padding: 1rem 1.2rem; font-size: 13.5px; line-height: 1.65; margin: 1.25rem 0; }
+  .hot-take strong.ht-label { display: block; text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; color: var(--peach-dark); margin-bottom: 4px; }
+
+  /* STROLLER PICKER */
+  .picker { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem; }
+  .picker-q { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .picker-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.1rem; }
+  .picker-btn { font-family: 'Karla', sans-serif; font-size: 13.5px; font-weight: 600; background: var(--cream); border: 1.5px solid var(--border-strong); border-radius: 999px; padding: 8px 18px; cursor: pointer; color: var(--ink-light); }
+  .picker-btn.active { background: var(--sage-light); border-color: var(--sage-dark); color: var(--sage-dark); }
+  .picker-results { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 0.25rem; }
+  @media (max-width: 560px) { .picker-results { grid-template-columns: 1fr; } }
+  .picker-card { border: 1.5px solid var(--border-strong); border-radius: var(--radius); padding: 1rem 1.1rem; background: var(--cream); }
+  .picker-card .pc-label { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .picker-card.travel .pc-label { color: var(--sky-dark); }
+  .picker-card.everyday .pc-label { color: var(--sage-dark); }
+  .picker-card .pc-pick { font-size: 15px; font-weight: 700; line-height: 1.4; }
+  .picker-card p { font-size: 12.5px; color: var(--ink-light); margin-top: 5px; line-height: 1.55; }
+
+  /* STEP LISTS */
+  .steps { display: flex; flex-direction: column; gap: 10px; margin: 1rem 0; }
+  .step { display: flex; gap: 12px; align-items: flex-start; background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.8rem 1rem; }
+  .step-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--lilac-light); color: var(--lilac-dark); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+  .step p { font-size: 13.5px; line-height: 1.6; }
+
+  /* DO / DON'T */
+  .dd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .dd-card { background: var(--warm-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; display: flex; gap: 12px; align-items: flex-start; }
+  .dd-card.do { border-left: 3px solid var(--sage); }
+  .dd-card.dont { border-left: 3px solid var(--blush-dark); }
+  .dd-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .dd-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 3px; }
+  .do .dd-tag { color: var(--sage-dark); }
+  .dont .dd-tag { color: var(--blush-dark); }
+  .dd-card p { font-size: 13px; line-height: 1.55; }
+
+  /* TLDR */
+  .tldr { background: var(--warm-white); border: 2px solid var(--border-strong); border-radius: var(--radius); padding: 1.5rem; margin-top: 1rem; }
+  .tldr h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--lilac-dark); margin: 1.4rem 0 0.6rem; }
+  .tldr h3:first-child { margin-top: 0; }
+  .tldr ul { list-style: none; }
+  .tldr li { font-size: 13.5px; padding: 5px 0 5px 26px; position: relative; line-height: 1.55; border-bottom: 1px dashed var(--border); }
+  .tldr li::before { content: '☐'; position: absolute; left: 2px; color: var(--sage-dark); font-size: 15px; }
+  .tldr li.skip::before { content: '✗'; color: var(--blush-dark); }
+  .tldr li strong { font-weight: 600; }
+
+  /* FOOTER */
+  .footer { text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--ink-muted); line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="hero-emoji">🍼</span>
+  <h1>The <em>No-Regrets</em> Registry</h1>
+  <p class="hero-sub">Baby gear recs from an extremely picky mom of 2.</p>
+  <div class="hero-badges">
+    <span class="badge">🛒 Registry-ready</span>
+    <span class="badge">❄️ Calgary-winter tested</span>
+    <span class="badge">👶 Two-kid approved</span>
+    <a class="badge tldr-link" href="#tldr">✦ TLDR: just tell me what to buy, woman →</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="disclaimer">
+    📋 <strong>A quick disclaimer before we dive in:</strong> Every baby is different, and mine came with their own strong opinions. This is what worked for us after a lot of trial, error, and time spent on Facebook Marketplace. Nobody paid me to say any of this — these are the real picks from my real house. For anything sleep-related, always follow current safe-sleep guidance from your pediatrician. We're all out here just doing our best.
+  </div>
+
+  <div class="toc">
+    <p class="toc-label">✦ Jump to a section</p>
+    <div class="toc-links">
+      <a href="#strollers">Strollers 🛞</a>
+      <a href="#car-seats">Car Seats</a>
+      <a href="#sleep">Sleep 😴</a>
+      <a href="#carriers">Carriers</a>
+      <a href="#feeding">Feeding</a>
+      <a href="#solids">Starting Solids</a>
+      <a href="#diapering">Diapering</a>
+      <a href="#clothes">Clothes</a>
+      <a href="#bath">Bath 🛁</a>
+      <a href="#health">Health &amp; Sick Days</a>
+      <a href="#toys">Toys</a>
+      <a href="#donts">Registry Don'ts 🚫</a>
+      <a href="#for-mom">For Mom 💛</a>
+      <a href="#tldr">TLDR ✦</a>
+    </div>
+  </div>
+
+  <!-- STROLLERS -->
+  <div class="section">
+    <p class="section-label">The biggest decision</p>
+    <h2 id="strollers">Strollers: You Need Two. I'm Sorry.</h2>
+    <p class="section-desc">One compact stroller that lives in the car and folds in one motion, and one everyday stroller that can actually handle your climate. Tap your situation below and I'll tell you exactly what to get.</p>
+    <div class="quip">Yes, two strollers. No, this is not an excess thing. A travel stroller that can't handle snow and an everyday stroller that won't fit in your trunk are both useless half the year.</div>
+
+    <div class="picker">
+      <p class="picker-q">Where do you live?</p>
+      <div class="picker-row" id="pick-climate">
+        <button class="picker-btn active" data-val="cold" onclick="pick(this,'climate')">❄️ Real winters (snow)</button>
+        <button class="picker-btn" data-val="warm" onclick="pick(this,'climate')">☀️ Warm climate (no snow)</button>
+      </div>
+      <p class="picker-q">How many kids will ride?</p>
+      <div class="picker-row" id="pick-kids">
+        <button class="picker-btn active" data-val="one" onclick="pick(this,'kids')">👶 One</button>
+        <button class="picker-btn" data-val="two" onclick="pick(this,'kids')">👶👶 Two</button>
+      </div>
+      <div class="picker-results">
+        <div class="picker-card travel">
+          <div class="pc-label">🚗 Car / travel stroller</div>
+          <div class="pc-pick" id="res-travel"></div>
+          <p id="res-travel-note"></p>
+        </div>
+        <div class="picker-card everyday">
+          <div class="pc-label">🌤 Everyday stroller</div>
+          <div class="pc-pick" id="res-everyday"></div>
+          <p id="res-everyday-note"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="warn-box">⚠️ <strong>The registry classic I'd skip:</strong> the full-size UppaBaby Vista or Cruz. I know, everyone registers for one. They're beautiful. They're also enormous and heavy, and if you live somewhere with real winters (hi, Calgary) they're inconvenient for most of the year. The Minu line is the UppaBaby worth owning.</div>
+  </div>
+  <!-- CAR SEATS -->
+  <div class="section">
+    <p class="section-label">Non-negotiable safety gear</p>
+    <h2 id="car-seats">Car Seats: One for Each Stage</h2>
+    <p class="section-desc">Three seats, three stages. Buy new, check expiry dates, and get the install checked. This is the one category where you don't cheap out or buy used.</p>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-sky">Stage 1 · Bucket seat</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=nuna+pipa+infant+car+seat" target="_blank" rel="noopener">Nuna Pipa</a></p>
+        <p>Light, safe, and clicks in and out without a wrestling match. Worth it for the newborn car-nap transfer alone.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Stage 2 · Convertible</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=evenflo+revolve360+convertible+car+seat" target="_blank" rel="noopener">Evenflo Revolve360</a></p>
+        <p>The seat rotates to face the door. Your back will thank you every single day. Once you've loaded a toddler into a rotating seat you cannot go back.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Stage 3 · Harness / booster</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=graco+tranzitions+harness+booster" target="_blank" rel="noopener">Graco Tranzitions</a></p>
+        <p>Grows from 5-point harness to booster. Simple, slim, does the job for years.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLEEP -->
+  <div class="section">
+    <p class="section-label">The whole reason you're this tired</p>
+    <h2 id="sleep">Sleep: Where the Strong Opinions Live</h2>
+    <p class="section-desc">Everything here was tested across two babies and several hundred middle-of-the-night wakeups.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-sky">Bassinet</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=maxi+cosi+bassinet" target="_blank" rel="noopener">Maxi-Cosi bassinet</a></p>
+        <p>For the first months when baby sleeps in your room.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-sky">Crib</span>
+        <p class="pick">Whatever you like the look of. Truly.</p>
+        <p>Cribs all meet the same safety standard. Pick the pretty one, spend the savings elsewhere.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-sky">Crib mattress</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=breathable+crib+mattress" target="_blank" rel="noopener">A breathable one</a></p>
+        <p>This is where the crib money goes instead.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Travel crib</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=babybjorn+travel+crib" target="_blank" rel="noopener">BabyBjörn</a></p>
+        <p>Light enough to carry one-handed, sets up in seconds. Once your kid is over 12 months, add a <a href="https://www.amazon.ca/s?k=travel+crib+memory+foam+mattress" target="_blank" rel="noopener">memory foam insert</a>. Before one year, babies need the firm flat surface for safe sleep. And always pack an extra sheet when traveling.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Swaddle</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=ollie+swaddle" target="_blank" rel="noopener">The Ollie</a></p>
+        <p>Nothing better. Don't overthink this one.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Sleep sacks</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=woolino+sleep+sack" target="_blank" rel="noopener">Woolino</a> + <a href="https://www.amazon.ca/s?k=nest+designs+long+sleeve+sleep+bag" target="_blank" rel="noopener">Nest Designs</a></p>
+        <p>Woolino covers spring through fall. For winter, long-sleeve warm ones from Nest. Fair warning: our house gets cold.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-butter">Sound machine</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=yogasleep+dohm+marpac+sound+machine" target="_blank" rel="noopener">Marpac (Yogasleep) Dohm</a></p>
+        <p>Real fan-based white noise, no app, no subscription, no rainbow nightlight nobody asked for.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-butter">Monitor</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=nanit+pro+baby+monitor" target="_blank" rel="noopener">Nanit</a></p>
+        <p>Clear picture, reliable app, no drama.</p>
+      </div>
+    </div>
+
+    <div class="hot-take">
+      <strong class="ht-label">🌶️ Hot take</strong>
+      The Hatch sounds <em>awful</em>. Tinny, digital, looping. My kids slept noticeably better once we switched to the Marpac's actual moving-air white noise. I said what I said.
+    </div>
+
+    <div class="info-box">💡 <strong>On the Owlet:</strong> I loved ours, but context matters. Both my boys have asthma and we've had hospital visits for low oxygen, so the <a href="https://www.amazon.ca/s?k=owlet+dream+sock" target="_blank" rel="noopener">Owlet sock</a> gives me real peace of mind. The trick: we only use it when they're sick. As an every-night thing it's a false-alarm anxiety machine; as a sick-night tool it's brilliant. One more thing: I asked a pediatric ER doc about the sock on one of our visits, and they said it can sometimes read lower than baby's actual O2. Still, it's always safer to get checked than to be sorry.</div>
+
+    <div class="info-box">🍼 <strong>Pacifiers:</strong> we tried them all. Both boys said no thank you. Buy one or two brands, not a drawer full — your baby is the one deciding this, not the reviews.</div>
+  </div>
+
+  <!-- CARRIERS -->
+  <div class="section">
+    <p class="section-label">Hands-free survival</p>
+    <h2 id="carriers">Carriers: Try Before You Commit</h2>
+    <p class="section-desc">Carriers are like jeans: the reviews don't matter if the fit is wrong for <em>your</em> body and <em>your</em> baby. Try these three on if you can.</p>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-rose">The splurge</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=artipoppe+baby+carrier" target="_blank" rel="noopener">Artipoppe</a></p>
+        <p>Yes, it's the expensive one. It's also the comfortable one.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">The middle</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=mabe+baby+carrier" target="_blank" rel="noopener">Mabe</a></p>
+        <p>Great structure without the Artipoppe price tag.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-sky">The newborn one</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=ergobaby+embrace" target="_blank" rel="noopener">Ergobaby Embrace</a></p>
+        <p>Soft and cozy for the squishy newborn stage.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEEDING -->
+  <div class="section">
+    <p class="section-label">Fed is best, gear helps</p>
+    <h2 id="feeding">Feeding</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-sky">Bottles</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=mam+baby+bottles" target="_blank" rel="noopener">Start with MAM</a></p>
+        <p>Bottles are extremely baby-dependent. Do not stock up on any brand before your baby has voted. MAM is the best first guess IMO.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">High chair</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=stokke+tripp+trapp" target="_blank" rel="noopener">Stokke Tripp Trapp</a></p>
+        <p>We have two. I'm sorry, I just don't like any others as much. It grows with the kid and doesn't look like plastic playground equipment in your kitchen.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Travel high chair</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=inglesina+fast+table+chair" target="_blank" rel="noopener">Inglesina Fast</a></p>
+        <p>Clamps onto tables. Comes on every trip with us.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Nursing pillow</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=my+brest+friend+nursing+pillow" target="_blank" rel="noopener">My Brest Friend</a> or <a href="https://www.amazon.ca/s?k=boppy+nursing+pillow" target="_blank" rel="noopener">Boppy</a></p>
+        <p>Try a few — this is another fit-dependent one. I liked both of these.</p>
+      </div>
+    </div>
+
+    <div class="info-box">🍼 <strong>The pump advice nobody gives you:</strong> rent a hospital-grade pump for the first few weeks instead of buying. Only buy your own if you actually plan to keep pumping. For what it's worth, I don't recommend exclusively pumping; it is soul-draining. Whatever you choose, don't let a $400 pump you never use judge you from the closet.</div>
+  </div>
+
+  <!-- SOLIDS -->
+  <div class="section">
+    <p class="section-label">Chaos, but make it nutritious</p>
+    <h2 id="solids">Starting Solids</h2>
+    <p class="section-desc">You need less than the baby-food industrial complex wants you to believe. Here's the short list.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><p><strong><a href="https://www.amazon.ca/s?k=silicone+pouch+topper+spout" target="_blank" rel="noopener">Silicone pouch spouts</a></strong>: they prevent both spillage and the dreaded full-pouch squeeze onto your floor.</p></div>
+      <div class="step"><div class="step-num">2</div><p><strong><a href="https://www.amazon.ca/s?k=stainless+steel+toddler+plates+bowls" target="_blank" rel="noopener">Stainless steel plates, bowls, cups &amp; cutlery</a></strong>: unbreakable, dishwasher-safe, no plastic.</p></div>
+      <div class="step"><div class="step-num">3</div><p><strong><a href="https://www.amazon.ca/s?k=munchkin+weighted+straw+cup" target="_blank" rel="noopener">Munchkin weighted straw cup</a></strong> for water. Once they hit preschool, graduate to a <a href="https://www.amazon.ca/s?k=thermos+funtainer+water+bottle" target="_blank" rel="noopener">Thermos Funtainer</a>.</p></div>
+    </div>
+    <div class="quip">Yes, I'm embarrassingly crunchy about microplastics. The Munchkin cup gets a pass. Everyone has a price.</div>
+    <div class="info-box">🧃 <strong>Permission to be lazy:</strong> feeding pouches are obviously not for meals, but they are an easy, sort-of-healthy snack on the go. Zero guilt here.</div>
+  </div>
+
+  <!-- DIAPERING -->
+  <div class="section">
+    <p class="section-label">The glamour section</p>
+    <h2 id="diapering">Diapering</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-sky">Diapers &amp; wipes</span>
+        <p class="pick">Costco. That's it.</p>
+        <p>Kirkland diapers and wipes. Save the fancy-diaper money for literally anything else.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Diaper cream</span>
+        <p class="pick"><a href="https://www.rockymountainsoap.com/" target="_blank" rel="noopener">Rocky Mountain Soap Co. Bum Balm</a> + <a href="https://www.amazon.ca/s?k=calmoseptine+ointment" target="_blank" rel="noopener">Calmoseptine</a></p>
+        <p>Bum Balm for everyday mild irritation. When it's bad, Calmoseptine is the heavy artillery.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Changing pad</span>
+        <p class="pick">A cheap soft one + a few covers</p>
+        <p>We had the fancy wipeable Keekaroo and both boys hated it; it's always cold. Soft pad, washable covers, done.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-butter">Diaper pail</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=munchkin+diaper+pail" target="_blank" rel="noopener">Munchkin</a> — yes, get one</p>
+        <p>Pro tip: only poopy diapers go in the pail. Pee diapers go in the regular trash. Your refill budget will thank you.</p>
+      </div>
+    </div>
+    <div class="hot-take">
+      <strong class="ht-label">🌶️ Hot take</strong>
+      You don't need a diaper bag. Get a big cute pouch (<a href="https://pehr.com/" target="_blank" rel="noopener">Pehr</a> and <a href="https://baggu.com/" target="_blank" rel="noopener">Baggu</a> make great ones) with a few diapers, wipes, and hand sanitizer, and throw it in whatever bag you're already carrying. The $200 diaper backpack is a costume.
+    </div>
+    <div class="info-box">🧴 <strong>Bonus cleaning rec:</strong> <a href="https://www.amazon.ca/s?k=force+of+nature+cleaner+starter+kit" target="_blank" rel="noopener">Force of Nature</a>. Slightly annoying that you have to "make" it every two weeks, but it kills germs, it's safe around babies and dogs, and it's great sprayed on the couch for dog odors. Worth it for the peace of mind alone.</div>
+  </div>
+
+  <!-- CLOTHES -->
+  <div class="section">
+    <p class="section-label">Keep it simple</p>
+    <h2 id="clothes">Clothes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-mint">Sleepers</span>
+        <p class="pick"><a href="https://oldnavy.gap.com/" target="_blank" rel="noopener">Old Navy rib double-zip sleepers</a></p>
+        <p>My favorites, full stop. Double zips mean you're not fighting snaps at 3am. Buy them in every size.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-rose">Shoes</span>
+        <p class="pick">NO BABY SHOES.</p>
+        <p>Complete waste of money until they're walking. Once they walk, take them <em>into a store</em> to be fitted. Kid shoe sizing online is impossible. Calgary friends: we love Two Giraffes in Willow Park.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BATH -->
+  <div class="section">
+    <p class="section-label">Splash zone</p>
+    <h2 id="bath">Bath Time</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-sky">Tub insert</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=angelcare+bath+support" target="_blank" rel="noopener">Angelcare bath support</a></p>
+        <p>Worked great for us — honestly, most would do the job.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-sky">Towels</span>
+        <p class="pick">Your regular towels</p>
+        <p>Skip the hooded animal towels. Do get some <a href="https://www.amazon.ca/s?k=soft+baby+washcloths" target="_blank" rel="noopener">really soft face cloths</a> if you don't have any. Keep a stack in the kitchen for after-meal cleanups too.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Wash</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=cerave+baby+wash" target="_blank" rel="noopener">CeraVe Baby</a> or <a href="https://www.amazon.ca/s?k=live+clean+baby+wash" target="_blank" rel="noopener">Live Clean</a></p>
+        <p>CeraVe for sensitive skin. Live Clean smells amazing, if it doesn't irritate their skin.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-mint">Lotion</span>
+        <p class="pick">CeraVe in the tub, Vaseline on dry spots</p>
+        <p>Lotion while they're still damp, then a layer of <a href="https://www.amazon.ca/s?k=vaseline+petroleum+jelly" target="_blank" rel="noopener">Vaseline</a> over any dry patches to seal it in.</p>
+      </div>
+    </div>
+  </div>
+  <!-- HEALTH -->
+  <div class="section">
+    <p class="section-label">For the inevitable daycare plague</p>
+    <h2 id="health">Health &amp; Sick Days</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag tag-rose">Thermometer</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=braun+thermoscan+ear+thermometer" target="_blank" rel="noopener">Braun in-ear</a></p>
+        <p>Fast, accurate, doesn't require a sleeping child to hold still for 30 seconds.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-rose">Snot management</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=nosefrida+nasal+aspirator" target="_blank" rel="noopener">NoseFrida</a> + <a href="https://www.amazon.ca/s?k=boogie+mist+saline" target="_blank" rel="noopener">Boogie saline mist</a></p>
+        <p>The NoseFrida goes everywhere with us. Yes, you're sucking snot through a tube. No, it's not as gross as it sounds. Mostly.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Air</span>
+        <p class="pick"><a href="https://www.amazon.ca/s?k=air+purifier+humidifier+combo" target="_blank" rel="noopener">Purifier/humidifier combo</a></p>
+        <p>No specific brand to push. Just get one unit that does both instead of two machines fighting for the same outlet.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-lilac">Nails</span>
+        <p class="pick"><a href="https://www.amazon.ca/dp/B0CF2SKCZB" target="_blank" rel="noopener">This nail clipper</a></p>
+        <p>This exact one. It's small and sharp, so you get a clean cut instead of clipping a moving target and living in fear.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOYS -->
+  <div class="section">
+    <p class="section-label">Brace yourself</p>
+    <h2 id="toys">Toys</h2>
+    <p class="section-desc">Less is more. That's it. That's the section.</p>
+    <div class="quip">Your baby's favorite toys will be a kitchen spatula, an empty box, and your phone. Every toy you buy is competing with a spatula and losing.</div>
+    <div class="info-box">🧸 <strong>The one toy subscription worth it:</strong> we used <a href="https://lovevery.com/" target="_blank" rel="noopener">Lovevery</a> for our first. The kits are genuinely well designed for each stage, and if you keep each kit together, they resell really well on Marketplace when you're done.</div>
+    <div class="info-box">🎁 <strong>Calgary friends:</strong> <a href="https://maudekidsdecor.com/" target="_blank" rel="noopener">Maude Kids Decor</a> has the sweetest toys and is a wonderful place to shop for gifts.</div>
+  </div>
+
+  <!-- REGISTRY DON'TS -->
+  <div class="section">
+    <p class="section-label">Save your money</p>
+    <h2 id="donts">Registry Don'ts</h2>
+    <p class="section-desc">Things people will tell you that you need. You do not need them.</p>
+    <div class="dd-grid">
+      <div class="dd-card dont"><span class="dd-icon">🛑</span><div><p class="dd-tag">Don't</p><p><strong>Full-size UppaBaby Vista/Cruz.</strong> Huge, heavy, and inconvenient, especially anywhere with real winters. The Minu is the one to get.</p></div></div>
+      <div class="dd-card dont"><span class="dd-icon">🛒</span><div><p class="dd-tag">Don't</p><p><strong>The "nursing cart."</strong> Never used mine once. It's a $60 way to store snacks you'll eat on the couch anyway.</p></div></div>
+      <div class="dd-card dont"><span class="dd-icon">👟</span><div><p class="dd-tag">Don't</p><p><strong>Baby shoes.</strong> Pure decoration until they walk. Then get fitted in-store; kid sizing is impossible online.</p></div></div>
+      <div class="dd-card dont"><span class="dd-icon">🎒</span><div><p class="dd-tag">Don't</p><p><strong>A dedicated diaper bag.</strong> A big cute pouch in your regular bag does the same job for a tenth of the price.</p></div></div>
+      <div class="dd-card dont"><span class="dd-icon">🧸</span><div><p class="dd-tag">Don't</p><p><strong>A mountain of toys.</strong> Less is more. See: spatula.</p></div></div>
+      <div class="dd-card dont"><span class="dd-icon">🧴</span><div><p class="dd-tag">Don't</p><p><strong>Wipeable "luxury" changing pads.</strong> They're cold and babies hate them. Cheap soft pad + covers.</p></div></div>
+    </div>
+  </div>
+
+  <!-- FOR MOM -->
+  <div class="section">
+    <p class="section-label">You're on the registry too</p>
+    <h2 id="for-mom">For Mom 💛</h2>
+    <p class="section-desc">The stuff nobody puts on the registry but everyone needs in week one.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><p><strong>Lots of maxi pads — no wings.</strong> Stock up before your due date. More than you think.</p></div>
+      <div class="step"><div class="step-num">2</div><p><strong><a href="https://www.amazon.ca/s?k=frida+mom+peri+bottle" target="_blank" rel="noopener">Frida Mom peri bottle</a>.</strong> The upside-down angled one. The hospital one is not the same and we both know it.</p></div>
+      <div class="step"><div class="step-num">3</div><p><strong>Advil and Tylenol.</strong> Have both at home before you deliver. Ask your care team about alternating them.</p></div>
+      <div class="step"><div class="step-num">4</div><p><strong>Make padsicles before your due date.</strong> Witch hazel and aloe on a pad, wrap it up, freeze. Stock the freezer with a batch; future you will be so grateful.</p></div>
+      <div class="step"><div class="step-num">5</div><p><strong><a href="https://lovesteady.co/products/bloomers-maternity-postpartum-undie-black" target="_blank" rel="noopener">Love Steady bloomers</a>.</strong> These were so amazing postpartum. Designed by a physical therapist, they use flexible compression to support your core and pelvic floor: it feels like they're helping your organs settle back into place.</p></div>
+    </div>
+  </div>
+
+  <!-- TLDR -->
+  <div class="section">
+    <p class="section-label">The whole guide in one list</p>
+    <h2 id="tldr">TLDR: Just Tell Me What to Buy, Woman ✦</h2>
+    <p class="section-desc">The complete no-regrets registry, in checklist form. Screenshot it, share it, take it shopping.</p>
+    <div class="tldr">
+      <h3>🛞 Strollers</h3>
+      <ul>
+        <li><strong>Travel:</strong> Bugaboo Butterfly or UppaBaby Minu (Minu Duo for two kids)</li>
+        <li><strong>Everyday, snowy climate:</strong> Thule Chariot (Single or Double)</li>
+        <li><strong>Everyday, warm climate:</strong> Bugaboo Fox or Donkey (Donkey Duo for two)</li>
+        <li class="skip">Full-size UppaBaby Vista/Cruz</li>
+      </ul>
+      <h3>🚗 Car seats</h3>
+      <ul>
+        <li><strong>Bucket:</strong> Nuna Pipa</li>
+        <li><strong>Convertible:</strong> Evenflo Revolve360</li>
+        <li><strong>Harness/booster:</strong> Graco Tranzitions</li>
+      </ul>
+      <h3>😴 Sleep</h3>
+      <ul>
+        <li><strong>Bassinet:</strong> Maxi-Cosi · <strong>Crib:</strong> whichever is pretty · <strong>Mattress:</strong> breathable</li>
+        <li><strong>Travel crib:</strong> BabyBjörn (+ memory foam insert after 12 months, + spare sheet)</li>
+        <li><strong>Swaddle:</strong> Ollie · <strong>Sleep sacks:</strong> Woolino + Nest Designs winter</li>
+        <li><strong>Sound machine:</strong> Marpac Dohm (not Hatch) · <strong>Monitor:</strong> Nanit</li>
+        <li><strong>Owlet sock:</strong> for sick nights only</li>
+      </ul>
+      <h3>🤱 Carriers &amp; feeding</h3>
+      <ul>
+        <li><strong>Carrier:</strong> try Artipoppe, Mabe, or Ergobaby Embrace</li>
+        <li><strong>Bottles:</strong> start with MAM, let baby decide</li>
+        <li><strong>Pump:</strong> rent hospital-grade first, buy only if continuing</li>
+        <li><strong>High chair:</strong> Stokke Tripp Trapp · <strong>Travel:</strong> Inglesina Fast</li>
+        <li><strong>Nursing pillow:</strong> My Brest Friend or Boppy</li>
+      </ul>
+      <h3>🍝 Solids</h3>
+      <ul>
+        <li>Silicone pouch spouts · stainless steel dishes &amp; cutlery</li>
+        <li>Munchkin weighted straw cup → Thermos Funtainer</li>
+      </ul>
+      <h3>🧷 Diapering</h3>
+      <ul>
+        <li><strong>Diapers &amp; wipes:</strong> Costco</li>
+        <li><strong>Cream:</strong> RMS Bum Balm (mild) · Calmoseptine (bad)</li>
+        <li><strong>Pad:</strong> cheap soft one + covers · <strong>Pail:</strong> Munchkin, poop only</li>
+        <li><strong>"Diaper bag":</strong> a <a href="https://pehr.com/" target="_blank" rel="noopener">Pehr</a> or <a href="https://www.amazon.ca/s?k=baggu+pouch" target="_blank" rel="noopener">Baggu</a> pouch</li>
+        <li><strong>Cleaner:</strong> Force of Nature</li>
+      </ul>
+      <h3>👕 Clothes &amp; bath</h3>
+      <ul>
+        <li><strong>Sleepers:</strong> Old Navy rib double-zip</li>
+        <li class="skip">Baby shoes (until walking — then get fitted in-store)</li>
+        <li><strong>Bath:</strong> Angelcare insert · soft face cloths · CeraVe Baby or Live Clean · CeraVe lotion + Vaseline</li>
+      </ul>
+      <h3>🤒 Health</h3>
+      <ul>
+        <li>Braun in-ear thermometer · NoseFrida + Boogie mist</li>
+        <li>Air purifier/humidifier combo · electric nail trimmer</li>
+      </ul>
+      <h3>💛 For mom</h3>
+      <ul>
+        <li>Maxi pads (no wings) · padsicles in the freezer · Frida Mom peri bottle · Advil + Tylenol · <a href="https://lovesteady.co/products/bloomers-maternity-postpartum-undie-black" target="_blank" rel="noopener">Love Steady bloomers</a></li>
+      </ul>
+      <h3>🚫 Skip entirely</h3>
+      <ul>
+        <li class="skip">Nursing cart · diaper bag · baby shoes · toy mountain · Keekaroo-style pads · Hatch</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    Made with love, spit-up, and strong opinions by an extremely picky mom of 2.<br/>
+    Some links may become affiliate links; it never changes the price you pay or the picks I make.<br/>
+    Always follow current safe-sleep and car-seat guidance from your pediatrician and local regulations.
+  </div>
+
+</div>
+
+<script>
+  var choice = { climate: 'cold', kids: 'one' };
+  var picks = {
+    cold_one:  { travel: 'Bugaboo Butterfly or UppaBaby Minu', travelNote: 'Folds tiny, lives in the trunk, one-hand fold.',
+                 everyday: 'Thule Chariot Single', everydayNote: 'Handles snow, doubles as a bike trailer and ski/jog setup. The Calgary winter MVP.' },
+    cold_two:  { travel: 'UppaBaby Minu Duo', travelNote: 'Side-by-side that still fits through doors and in the trunk.',
+                 everyday: 'Thule Chariot Double', everydayNote: 'Two kids, real winters, still moving. Nothing else comes close.' },
+    warm_one:  { travel: 'Bugaboo Butterfly or UppaBaby Minu', travelNote: 'Folds tiny, lives in the trunk, one-hand fold.',
+                 everyday: 'Bugaboo Fox (or Donkey Single)', everydayNote: 'Beautiful push, great sun canopy, no snow to worry about.' },
+    warm_two:  { travel: 'UppaBaby Minu Duo', travelNote: 'Side-by-side that still fits through doors and in the trunk.',
+                 everyday: 'Bugaboo Donkey Duo', everydayNote: 'The side-by-side that steers like a single. Worth it with two.' }
+  };
+  var links = {
+    'Bugaboo Butterfly or UppaBaby Minu': 'bugaboo+butterfly',
+    'UppaBaby Minu Duo': 'uppababy+minu+duo',
+    'Thule Chariot Single': 'thule+chariot+single',
+    'Thule Chariot Double': 'thule+chariot+double',
+    'Bugaboo Fox (or Donkey Single)': 'bugaboo+fox',
+    'Bugaboo Donkey Duo': 'bugaboo+donkey+duo'
+  };
+  function pick(btn, key) {
+    choice[key] = btn.getAttribute('data-val');
+    var row = btn.parentNode.querySelectorAll('.picker-btn');
+    for (var i = 0; i < row.length; i++) row[i].classList.remove('active');
+    btn.classList.add('active');
+    render();
+  }
+  function linkify(name) {
+    var q = links[name];
+    if (!q) return name;
+    return '<a href="https://www.amazon.ca/s?k=' + q + '" target="_blank" rel="noopener">' + name + '</a>';
+  }
+  function render() {
+    var p = picks[choice.climate + '_' + choice.kids];
+    document.getElementById('res-travel').innerHTML = linkify(p.travel);
+    document.getElementById('res-travel-note').textContent = p.travelNote;
+    document.getElementById('res-everyday').innerHTML = linkify(p.everyday);
+    document.getElementById('res-everyday-note').textContent = p.everydayNote;
+  }
+  render();
+</script>
+
+
+</body>
+</html>
